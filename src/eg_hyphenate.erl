@@ -38,7 +38,7 @@ test(1) -> word("hyphenation", eg_hyphen_rules_en_GB);
 test(2) -> partitions("supercalifragilisticexpialidocious", 
 		      eg_hyphen_rules_en_GB);
 test(3) -> test_text(eg_hyphen_rules, text_en()); %% using old .tex based rules 
-test(4) -> test_text(eg_hyphen_rules_en_GB, text_en());
+test(4) -> test_text(eg_hyphen_rules_en_GB, text_en()).
 
 
 test_text(Rules, Text) -> 

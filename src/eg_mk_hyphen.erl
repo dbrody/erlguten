@@ -39,21 +39,13 @@
 start() ->
     start([orig]),
 
-    start([en_GB]),
-    start([sv_SE]),
-    start([da_DK]),
-    start([fi_FI]),
-    start([nb_NO]).
+    start([en_GB]).
 
 start([orig]) -> start_original();
 
 %% pass .dic file name and lc_CC (language code and country code) to use
 %% in generated eg_hyphen_rules_lc_CC.erl files
-start([en_GB]) -> start("hyph_en_GB.dic", "en_GB");
-start([sv_SE]) -> start("hyph_sv_SE.dic", "sv_SE");
-start([da_DK]) -> start("hyph_da_DK.dic", "da_DK");
-start([fi_FI]) -> start("hyph_fi_FI.dic", "fi_FI");
-start([nb_NO]) -> start("hyph_nb_NO.dic", "nb_NO").
+start([en_GB]) -> start("hyph_en_GB.dic", "en_GB").
 
 
 %% create eg_hyphen_rules_en.erl

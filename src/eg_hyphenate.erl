@@ -38,7 +38,7 @@ test(1) -> word("hyphenation", eg_hyphen_rules_en_GB);
 test(2) -> partitions("supercalifragilisticexpialidocious", 
 		      eg_hyphen_rules_en_GB);
 test(3) -> test_text(eg_hyphen_rules, text_en()); %% using old .tex based rules 
-test(5) -> test_text(eg_hyphen_rules_en_GB, text_en());
+test(4) -> test_text(eg_hyphen_rules_en_GB, text_en());
 
 
 test_text(Rules, Text) -> 
@@ -55,22 +55,6 @@ get_words(Text) ->
 
 %% ============================================================================
 
-%% text from: Svenska Dagbladet (2009-08-05) 
-%%            http://www.svd.se/nyheter/inrikes/artikel_3310817.svd
-text_sv() ->
-    "Ali Mehrabi och hans kompisar skulle �verl�mna ett brev och en "
-	"film till UD ig�r. De fick tr�ffa Anders J�rle, presschef f�r "
-	"UD:s presstj�nst, han skulle se till att utrikesminister Carl "
-	"Bildt fick materialet. I brevet v�djar ungdomarna till ministern "
-	"att inte erk�nna Mahmoud Ahmadinejad som Irans president. "
-
-	"Folkpartiets utrikespolitiske talesperson, Birgitta Ohlsson, "
-	"tycker att Sverige borde bli tuffare i sin kritik mot den Iranska "
-	"regimen och att man borde st�dja demokratir�relsen i landet. "
-	"Hon p�pekar dock att Sverige representerade EU p� "
-	"presidentinstallationen och att meningarna d�r var delade n�r "
-	"det g�ller ceremonin.".
-
 %% text from: BBC (2009-08-05) 
 %%            http://news.bbc.co.uk/2/hi/middle_east/8184240.stm
 text_en() ->
@@ -85,56 +69,6 @@ text_en() ->
 	"sending letters of congratulation to Mr Ahmadinejad. "
 	"At least 30 people died during the street protests which followed "
 	"the 12 June poll.".
-
-%% text from: dagbladet.no (2009-08-05) 
-%%            http://www.dagbladet.no/2009/08/05/kultur/the_beatles/
-%%            stanley_kubrick/musikk/film/7520522/
-text_nb() ->
-    "Hvordan hadde du forholdt deg til en \"Ringenes Herre\"-filmatisering "
-	"med Paul McCartney som Frodo Baggins, John Lennon som Gandalf the "
-	"Grey og Stanley Kubrick som regiss�r? "
-	"Det h�res ut som et meget surrealistisk og uvirkelig prosjekt, men "
-	"det kunne fort ha v�rt en realitet. "
-	"Tolkien-eksperten Michael D. C. Drout skriver blant annet i boka "
-	"si \"J.R.R. Tolkien encyclopedia\" hvordan The Beatles pr�vde � "
-	"lage film av Tolkien-romanen \"Ringenes Herre\" etter at "
-	"rettighetene var solgt til United Artists i 1968. "
-	"Tanken deres var at The Beatles selv skulle spille hovedrollene "
-	"og lage filmmusikken.".
-    
-%% text from: jyllandsposten (2009-08-05)
-%%            http://jp.dk/udland/usa/article1772552.ece
-text_da() ->
-    "To amerikanske journalister tilbageholdt i Nordkorea i 140 dage "
-	"br�d sammen ved synet af deres familie i USA. Det er godt at "
-	"v�re fri, siger de. "
-	"I f�rste omgang s� Hana Lee lidt forvirret ud. "
-	"Den fire�rige pige havde ikke set sin mor i 140 dage. "
-	"Men s� knugede hun sig fast til den amerikanske journalist Euna "
-	"Lee og ville ikke give slip igen."
-	"S�dan var scenen onsdag eftermiddag dansk tid, da Euna Lee og "
-	"Laura Ling ankom til lufthavnen i Burbank, Californien."
-	"De to journalister har v�ret tilbageholdt i Nordkorea, siden de "
-	"i marts blev anholdt ved gr�nsen mellem Nordkorea og Kina - og "
-	"siden blev id�mt 12 �r i en arbejdslejr for at have overskredet "
-	"gr�nsen ulovligt.".
-
-%% text from: wikipedia (2009-08-06) (About finnish person numbers)
-%%            http://fi.wikipedia.org/wiki/Henkil%C3%B6tunnus
-text_fi() ->
-    "Suomessa henkil�tunnus (hetu) annetaan Suomen kansalaisille sek� "
-	"Suomessa pysyv�sti tai pitk�aikaisesti (v�hint��n vuoden) "
-	"oleskeleville ulkomaalaisille. Tunnus voidaan anomuksesta my�nt�� "
-	"my�s tilap�isesti oleskeleville henkil�ille. Tunnuksen my�nt�� "
-	"V�est�rekisterikeskus. Henkil�tunnusta ei voi k�ytt�� luotettavasti "
-	"henkil�llisyyden todisteena kahdesta syyst�: ensinn�kin se ei ole "
-	"salainen tieto, ja toiseksi se ei ole vaihdettavissa, "
-	"kuten vaikkapa verkkopankin salasana. Valitettavasti "
-	"henkil�tunnusta, etenkin sen loppuosaa, usein luullaan "
-	"er��nlaiseksi \"salasanaksi\" vaikkapa pankkikorttiostoksia "
-	"tehdess� tai terveyskeskuksessa asioidessa, mik� johtaa helposti "
-	"v��rink�yt�ksiin.".
-
 
 %% ============================================================================
 
